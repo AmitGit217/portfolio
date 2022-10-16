@@ -1,0 +1,76 @@
+.home {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: "Fira Code";
+    font-style: normal;
+    padding: 0 5% 0 5%;
+    height: 90%;
+    gap: 30%;
+    position: relative;
+}
+
+.home__blur-green {
+    position: absolute;
+    width: 225px;
+    height: 225px;
+    background: #43d9ad;
+    opacity: 0.4;
+    filter: blur(87px);
+    transform: rotate(-94.3deg);
+    top: 5%;
+    right: 20%;
+}
+.home__blur-blue {
+    position: absolute;
+    width: 225px;
+    height: 225px;
+    background: #4d5bce;
+    opacity: 0.4;
+    filter: blur(87px);
+    transform: rotate(13.51deg);
+    top: 20%;
+    left: 10%;
+}
+.home__main-text {
+    display: flex;
+    flex-direction: column;
+    margin-top: 20%;
+    gap: 10px;
+}
+.home__per-title {
+    margin: 0;
+    font-weight: 450;
+    font-size: 18px;
+    line-height: 24px;
+    color: #e5e9f0;
+}
+
+.home__title {
+    margin: 0;
+    font-weight: 400;
+    font-size: 62px;
+    line-height: 100%;
+    color: #e5e9f0;
+}
+
+.home__prof {
+    margin: 0;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 26px;
+    color: #43d9ad;
+}
+
+.home__github-comment {
+    font-weight: 450;
+    font-size: 14px;
+    line-height: 140%;
+    color: #607b96;
+}
+
+.home__github-link {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 140%;
+}

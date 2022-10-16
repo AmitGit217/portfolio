@@ -1,0 +1,18 @@
+.header {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 5% 0 5%;
+    border-bottom: 1px solid #1e2d3d;
+}
+.header__name {
+    font-family: "Fira Code";
+    font-style: normal;
+    font-weight: 450;
+    font-size: 16px;
+    line-height: 21px;
+    color: #607b96;
+}
+
+.header__menu-icon {
+    cursor: pointer;
+}

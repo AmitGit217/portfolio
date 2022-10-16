@@ -22,8 +22,10 @@ function Home() {
                     <span>
                         <a
                             className='value'
+                            target={"_blank"}
+                            rel='noreferrer'
                             href='https://github.com/AmitGit217'>
-                            https://github.com/AmitGit217"
+                            "https://github.com/AmitGit217"
                         </a>
                     </span>
                 </p>

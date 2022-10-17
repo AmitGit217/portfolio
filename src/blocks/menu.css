@@ -32,7 +32,9 @@
     font-weight: 400;
     font-size: 16px;
     border-bottom: 1px solid #1e2d3d;
-    padding: 17px 0 17px 0;
+    height: 42px;
+    display: flex;
+    align-items: center;
     cursor: pointer;
     transition: 0.3s;
 }
@@ -44,8 +46,7 @@
     border-top: 1px solid #1e2d3d;
     display: flex;
     justify-content: space-between;
-    padding: 0 2% 0 2%;
-    height: 40px;
+    height: 50px;
 }
 .menu__footer-caption {
     font-weight: 450;
@@ -53,16 +54,27 @@
     line-height: 21px;
     color: #607b96;
     align-self: center;
+    text-indent: 15px;
     margin: 0;
 }
 
 .menu__social {
     border-left: 1px solid #1e2d3d;
-    transition: 0.3s;
-    height: 100%;
-    padding-left: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50px;
 }
 
-.menu__social:hover {
+.menu__footer-links {
+    display: flex;
+}
+
+.menu__footer-image {
+    width: 25px;
+    transition: 0.3s;
+}
+
+.menu__footer-image:hover {
     opacity: 0.6;
 }

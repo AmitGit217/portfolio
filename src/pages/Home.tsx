@@ -12,9 +12,7 @@ function Home() {
                 <p className='home__prof'>{"> "}Software developer</p>
             </div>
             <div className='home__github'>
-                <p className='home__github-comment'>
-                    {"// "}find my profile on Github:{" "}
-                </p>
+                <p className='comment'>{"// "}find my profile on Github: </p>
                 <p className='home__github-link'>
                     <span className='const'>const</span>{" "}
                     <span className='var'>githubLink</span>{" "}

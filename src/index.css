@@ -14,3 +14,16 @@
     color: #e99287;
     text-decoration: none;
 }
+.comment {
+    font-weight: 450;
+    font-size: 14px;
+    line-height: 140%;
+    color: #607b96;
+}
+.back {
+    color: white;
+    font-family: "Fira code";
+    text-indent: 5px;
+    margin: 5px;
+    cursor: pointer;
+}

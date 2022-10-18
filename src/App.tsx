@@ -3,16 +3,20 @@ import Home from "./pages/Home";
 import "./blocks/main.css";
 import Header from "./components/Header";
 import Menu from "./components/Menu";
+import About from "./pages/About";
 
 function App() {
-    const [showMenu, setMenu] = useState(false);
-    const showMenuFunc = () => {
-        setMenu(!showMenu);
+    const [showComp, setComp] = useState("");
+    const showCompFunc = (comp: string) => {
+        setComp(comp);
     };
+
     return (
         <main className='main'>
-            <Header showMenuProp={showMenuFunc} showMenu={showMenu} />
-            {showMenu ? <Menu /> : <Home />}
+            <Header showMenu={showCompFunc} />
+            {showComp === "" && <Home />}
+            {showComp === "menu" && <Menu setMenu={showCompFunc} />}
+            {showComp === "about" && <About setMenu={showCompFunc} />}
         </main>
     );
 }

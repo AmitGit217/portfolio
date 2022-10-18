@@ -1,13 +1,15 @@
-import React from "react";
+import React, { useState } from "react";
 import "../blocks/header.css";
 import burger from "../assets/images/burger.svg";
 import exit from "../assets/images/exit-icon.svg";
 
-function Header(props: { showMenuProp: any; showMenu: boolean }) {
+function Header(props: { showMenu: any }) {
+    const [iconState, setIcon] = useState(true);
     const handleMenuBool = () => {
-        props.showMenuProp();
+        !iconState ? props.showMenu("") : props.showMenu("menu");
+        setIcon(!iconState);
     };
-    const icon = props.showMenu ? exit : burger;
+    const icon = iconState ? burger : exit;
     return (
         <div className='header'>
             <p className='header__name'>Amit Bar-Gil</p>

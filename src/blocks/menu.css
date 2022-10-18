@@ -34,6 +34,7 @@
 }
 
 .menu__footer {
+    font-family: "Fira Code";
     border-top: 1px solid #1e2d3d;
     display: flex;
     justify-content: space-between;

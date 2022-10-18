@@ -1,0 +1,19 @@
+.thanks {
+    font-family: "Fira Code";
+    font-style: normal;
+    text-align: center;
+    margin-top: 150px;
+}
+
+.thanks__title {
+    color: #ffffff;
+    font-weight: 450;
+    font-size: 24px;
+    line-height: 31px;
+}
+
+.thanks__message {
+    font-size: 18px;
+    line-height: 24px;
+    color: #607b96;
+}

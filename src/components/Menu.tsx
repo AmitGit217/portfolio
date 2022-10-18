@@ -3,11 +3,10 @@ import "../blocks/menu.css";
 import githubIcon from "../assets/images/github-social.svg";
 import linkedinIcon from "../assets/images/linkedin-social.svg";
 
-function Menu(props: { showMenu: boolean }) {
+function Menu() {
     return (
-        <div className={`menu ${props.showMenu && `menu_show`}`}>
+        <div className={`menu`}>
             <nav className='menu__nav'>
-                <p className='menu__item'>/hello</p>
                 <p className='menu__item'>/about me</p>
                 <p className='menu__item'>/projects</p>
                 <p className='menu__item'>/contact</p>

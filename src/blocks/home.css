@@ -6,7 +6,7 @@
     font-style: normal;
     padding: 0 5% 0 5%;
     height: 90%;
-    gap: 30%;
+    gap: 350px;
     position: relative;
 }
 
@@ -60,6 +60,9 @@
     font-size: 20px;
     line-height: 26px;
     color: #43d9ad;
+}
+.home__github {
+    margin-bottom: 15%;
 }
 
 .home__github-comment {

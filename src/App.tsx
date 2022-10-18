@@ -11,8 +11,8 @@ function App() {
     };
     return (
         <main className='main'>
-            <Header showMenuProp={showMenuFunc} />
-            {showMenu ? <Menu showMenu={showMenu} /> : <Home />}
+            <Header showMenuProp={showMenuFunc} showMenu={showMenu} />
+            {showMenu ? <Menu /> : <Home />}
         </main>
     );
 }

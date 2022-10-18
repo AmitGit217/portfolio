@@ -5,6 +5,7 @@ import Header from "./components/Header";
 import Menu from "./components/Menu";
 import About from "./pages/About";
 import Projects from "./pages/Projects";
+import Contact from "./pages/Contact";
 
 function App() {
     const [showComp, setComp] = useState("");
@@ -19,6 +20,7 @@ function App() {
             {showComp === "menu" && <Menu setMenu={showCompFunc} />}
             {showComp === "about" && <About setMenu={showCompFunc} />}
             {showComp === "projects" && <Projects setMenu={showCompFunc} />}
+            {showComp === "contact" && <Contact setMenu={showCompFunc} />}
         </main>
     );
 }

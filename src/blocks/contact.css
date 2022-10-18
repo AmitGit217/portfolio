@@ -1,0 +1,56 @@
+.contact {
+    display: flex;
+    flex-direction: column;
+    font-family: "Fira Code";
+    gap: 20vh;
+}
+.contact__form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 45px;
+    gap: 10px;
+    font-style: normal;
+    font-weight: 450;
+    font-size: 16px;
+    line-height: 21px;
+    color: #607b96;
+}
+
+.contact__legend {
+    margin: 5px 0;
+}
+
+.contact__input {
+    background: #011221;
+    border: 1px solid #1e2d3d;
+    border-radius: 8px;
+    color: #465e77;
+    width: 250px;
+    height: 40px;
+    text-indent: 5px;
+    font-size: 18px;
+}
+
+.contact__text-area {
+    background: #011221;
+    border: 1px solid #1e2d3d;
+    font-weight: 450;
+    font-size: 16px;
+    line-height: 21px;
+    border-radius: 5px;
+    color: #465e77;
+    width: 240px;
+    height: 150px;
+    padding: 1%;
+}
+
+.contact__submit {
+    background: #1c2b3a;
+    color: #ffffff;
+    border-radius: 8px;
+    border: none;
+    width: 250px;
+    height: 40px;
+    cursor: pointer;
+}

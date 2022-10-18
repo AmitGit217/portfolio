@@ -21,6 +21,7 @@ export default function Projects(props: { setMenu: any }) {
                             about={card.about}
                             stack={card.stack}
                             link={card.link}
+                            key={index}
                         />
                     );
                 })}

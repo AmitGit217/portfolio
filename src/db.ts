@@ -16,7 +16,7 @@ const cards = [
         about: "Social media app for sharing and liking images from around the world",
         mainImage:
             "https://images.unsplash.com/photo-1611162617213-7d7a39e9b1d7?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8M3x8c29jaWFsJTIwbWVkaWF8ZW58MHx8MHx8&auto=format&fit=crop&w=500&q=60",
-        stack: [react, css, mongo, node, express, js, jest],
+        stack: [react, css, mongo, node, express, js, html, jest],
         link: "https://github.com/AmitGit217/react-around-api-full",
     },
     {

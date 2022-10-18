@@ -16,7 +16,11 @@ function Menu(props: { setMenu: any }) {
                     onClick={() => props.setMenu("projects")}>
                     projects
                 </p>
-                <p className='menu__item'>contact</p>
+                <p
+                    className='menu__item'
+                    onClick={() => props.setMenu("contact")}>
+                    contact
+                </p>
             </nav>
             <Footer />
         </div>

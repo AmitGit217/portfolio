@@ -64,7 +64,7 @@
 .home__title {
     margin: 0;
     font-weight: 400;
-    font-size: 62px;
+    font-size: 35px;
     line-height: 100%;
     color: #e5e9f0;
 }
@@ -75,6 +75,19 @@
     font-size: 20px;
     line-height: 26px;
     color: #43d9ad;
+    animation: disco 1s linear infinite;
+}
+
+@keyframes disco {
+    0% {
+        opacity: 1;
+    }
+    50% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
 }
 .home__github {
     margin-bottom: 15%;

@@ -9,10 +9,14 @@ function Menu(props: { setMenu: any }) {
                 <p
                     className='menu__item'
                     onClick={() => props.setMenu("about")}>
-                    /about_me
+                    about_me
                 </p>
-                <p className='menu__item'>/projects</p>
-                <p className='menu__item'>/contact</p>
+                <p
+                    className='menu__item'
+                    onClick={() => props.setMenu("projects")}>
+                    projects
+                </p>
+                <p className='menu__item'>contact</p>
             </nav>
             <Footer />
         </div>

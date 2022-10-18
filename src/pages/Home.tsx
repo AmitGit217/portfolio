@@ -8,7 +8,7 @@ function Home() {
             <div className='home__blur-blue'></div>
             <div className='home__main-text'>
                 <p className='home__per-title'>Hi all. I am</p>
-                <h1 className='home__title'>Amit</h1>
+                <h1 className='home__title'>Amit Bar-Gil</h1>
                 <p className='home__prof'>{"> "}Software developer</p>
             </div>
             <div className='home__github'>

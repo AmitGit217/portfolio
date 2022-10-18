@@ -20,6 +20,7 @@
     transform: rotate(-94.3deg);
     top: 5%;
     right: 20%;
+    animation: blurOpacity 4s linear infinite;
 }
 .home__blur-blue {
     position: absolute;
@@ -31,7 +32,21 @@
     transform: rotate(13.51deg);
     top: 20%;
     left: 10%;
+    animation: blurOpacity 7s linear infinite;
 }
+
+@keyframes blurOpacity {
+    0% {
+        opacity: 0.4;
+    }
+    50% {
+        opacity: 0.9;
+    }
+    100% {
+        opacity: 0.4;
+    }
+}
+
 .home__main-text {
     display: flex;
     flex-direction: column;

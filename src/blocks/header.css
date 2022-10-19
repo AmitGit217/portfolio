@@ -16,3 +16,21 @@
 .header__menu-icon {
     cursor: pointer;
 }
+
+@media screen and (min-width: 1000px) {
+    .header {
+        height: 40px;
+        display: flex;
+        justify-content: flex-start;
+        padding: 0 1% 0 1%;
+    }
+    .header__menu-icon {
+        display: none;
+    }
+    .header__name {
+        border-right: 1px solid #1e2d3d;
+        max-height: 100%;
+        margin: 0;
+        padding: 10px 100px 0 0;
+    }
+}

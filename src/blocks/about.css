@@ -3,3 +3,13 @@
     flex-direction: column;
     gap: 60vh;
 }
+.MuiPaper-root {
+    border-radius: 0 !important;
+}
+
+.about__options {
+    margin-top: 15px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}

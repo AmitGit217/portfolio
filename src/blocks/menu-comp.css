@@ -1,0 +1,25 @@
+.menu-comp {
+    color: #607b96;
+    font-family: "Fira Code";
+    font-style: normal;
+}
+
+.menu-comp__nav {
+    display: flex;
+    height: 100%;
+}
+.menu-comp__item {
+    margin: 0;
+    padding: 10px 35px 0 25px;
+    border-right: 1px solid #1e2d3d;
+    cursor: pointer;
+    transition: 0.1s;
+}
+
+.menu-comp__item:hover {
+    opacity: 0.6;
+}
+
+.menu-comp__item_active {
+    border-bottom: 3px solid #fea55f;
+}

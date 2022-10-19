@@ -2,7 +2,7 @@ import React from "react";
 import "../blocks/menu.css";
 import Footer from "./Footer";
 
-function Menu(props: { setMenu: any }) {
+function Menu(props: { setMenu: any; isComputer: boolean }) {
     return (
         <div className={`menu`}>
             <nav className='menu__nav'>

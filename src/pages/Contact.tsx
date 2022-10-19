@@ -3,15 +3,18 @@ import "../blocks/contact.css";
 import Footer from "../components/Footer";
 import emailjs from "@emailjs/browser";
 import ThankYou from "../components/ThankYou";
+import CircularProgress from "@mui/material/CircularProgress";
 
 export default function Contact(props: { setMenu: any }) {
     const [sended, setSended] = useState(false);
+    const [isInDeliver, setDeliver] = useState(false);
     const form = useRef<any | null>();
     const handleBack = () => {
         props.setMenu("menu");
     };
     const onSubmit = (e: React.FormEvent<HTMLFormElement>) => {
         e.preventDefault();
+        setDeliver(true);
         emailjs
             .sendForm(
                 "service_rgyi2cv",
@@ -23,6 +26,7 @@ export default function Contact(props: { setMenu: any }) {
                 (result) => {
                     if (result.status === 200) {
                         setSended(true);
+                        setDeliver(false);
                     }
                 },
                 (error) => {
@@ -48,6 +52,7 @@ export default function Contact(props: { setMenu: any }) {
                                 type='text'
                                 className='contact__input'
                                 name='name'
+                                required
                             />
                         </label>
 
@@ -57,6 +62,7 @@ export default function Contact(props: { setMenu: any }) {
                                 type='email'
                                 className='contact__input'
                                 name='email'
+                                required
                             />
                         </label>
                         <label className='contact__label'>
@@ -65,11 +71,18 @@ export default function Contact(props: { setMenu: any }) {
                             </legend>
                             <textarea
                                 className='contact__text-area'
-                                name='message'></textarea>
+                                name='message'
+                                required
+                            />
                         </label>
                         <button type={"submit"} className='contact__submit'>
                             submit-message
                         </button>
+                        {isInDeliver && (
+                            <div className='contact__progress'>
+                                <CircularProgress />
+                            </div>
+                        )}
                     </form>
                 ) : (
                     <ThankYou />

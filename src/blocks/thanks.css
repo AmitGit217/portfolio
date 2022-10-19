@@ -17,3 +17,9 @@
     line-height: 24px;
     color: #607b96;
 }
+
+@media screen and (min-width: 1000px) {
+    .thanks {
+        max-width: 400px;
+    }
+}

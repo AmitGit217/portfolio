@@ -43,8 +43,12 @@ function App() {
             {(showComp === "about" || activeNav === "about") && (
                 <About setMenu={showCompFunc} isComputer={isComputer} />
             )}
-            {showComp === "projects" && <Projects setMenu={showCompFunc} />}
-            {showComp === "contact" && <Contact setMenu={showCompFunc} />}
+            {(showComp === "projects" || activeNav === "projects") && (
+                <Projects setMenu={showCompFunc} />
+            )}
+            {(showComp === "contact" || activeNav === "contact") && (
+                <Contact setMenu={showCompFunc} />
+            )}
         </main>
     );
 }

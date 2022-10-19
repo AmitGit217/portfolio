@@ -3,6 +3,7 @@ import SideBar from "./SideBar";
 import { CodeBlock, dracula } from "react-code-blocks";
 import "../blocks/about-comp.css";
 import profile from "../assets/images/profile.png";
+import Footer from "./Footer";
 
 export default function AboutComp() {
     const [showData, setData] = useState("personal-info");
@@ -25,16 +26,17 @@ export default function AboutComp() {
  return result.length ? result.join(' ') : -1
 }`;
     return (
-        <section className='about-comp'>
-            <SideBar
-                nav={["personal-info", "professional-info"]}
-                compToShow={handleDataDisplay}
-                isActive={showData}
-            />
-            {showData === "personal-info" ? (
-                <div className='about-comp__code'>
-                    <CodeBlock
-                        text={`/*
+        <section>
+            <div className='about-comp'>
+                <SideBar
+                    nav={["personal-info", "professional-info"]}
+                    compToShow={handleDataDisplay}
+                    isActive={showData}
+                />
+                {showData === "personal-info" ? (
+                    <div className='about-comp__code'>
+                        <CodeBlock
+                            text={`/*
 * Hello there. My name is Amit Bar-Gil and
 * I'm 22 years old and currently live in
 * Afula (North Israel). I love to learn
@@ -43,20 +45,20 @@ export default function AboutComp() {
 * interesting ideas. Some of my hobbies:
 * music, sport, and chess.
 */`}
-                        language={"js"}
-                        showLineNumbers={true}
-                        theme={dracula}
-                    />
-                    <img
-                        className='about-comp__image'
-                        src={profile}
-                        alt='profile'
-                    />
-                </div>
-            ) : (
-                <div className='about-comp__code'>
-                    <CodeBlock
-                        text={`/*
+                            language={"js"}
+                            showLineNumbers={true}
+                            theme={dracula}
+                        />
+                        <img
+                            className='about-comp__image'
+                            src={profile}
+                            alt='profile'
+                        />
+                    </div>
+                ) : (
+                    <div className='about-comp__code'>
+                        <CodeBlock
+                            text={`/*
 
 I'm a full stack web developer with
 experience of developing, maintaining,
@@ -82,20 +84,22 @@ applications. Some of my methodologies:
     efficiency, and edge cases.
 
 */`}
-                        language={"js"}
-                        showLineNumbers={true}
-                        theme={dracula}
-                    />
-                    <div className='about-comp__code-snippet'>
-                        <CodeBlock
-                            text={twoSum}
                             language={"js"}
-                            showLineNumbers={false}
+                            showLineNumbers={true}
                             theme={dracula}
                         />
+                        <div className='about-comp__code-snippet'>
+                            <CodeBlock
+                                text={twoSum}
+                                language={"js"}
+                                showLineNumbers={false}
+                                theme={dracula}
+                            />
+                        </div>
                     </div>
-                </div>
-            )}
+                )}
+            </div>
+            <Footer />
         </section>
     );
 }

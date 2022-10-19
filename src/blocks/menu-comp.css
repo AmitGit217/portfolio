@@ -23,3 +23,9 @@
 .menu-comp__item_active {
     border-bottom: 3px solid #fea55f;
 }
+
+@media screen and (max-width: 1000px) {
+    .menu-comp {
+        display: none;
+    }
+}

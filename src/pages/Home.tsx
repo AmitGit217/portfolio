@@ -1,5 +1,6 @@
 import React from "react";
 import "../blocks/home.css";
+import Tetris from "../components/Tetris";
 
 function Home() {
     return (
@@ -28,6 +29,7 @@ function Home() {
                     </span>
                 </p>
             </div>
+            <Tetris />
         </section>
     );
 }

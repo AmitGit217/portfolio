@@ -1,7 +1,7 @@
 .about {
     display: flex;
     flex-direction: column;
-    gap: 60vh;
+    gap: 65vh;
 }
 .MuiPaper-root {
     border-radius: 0 !important;

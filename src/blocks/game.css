@@ -1,0 +1,29 @@
+.game {
+    position: absolute;
+    width: 475px;
+    height: 550px;
+    background-color: #43d9ac44;
+    right: 20%;
+    top: 15%;
+    border-radius: 15px;
+    display: flex;
+    padding: 1%;
+}
+
+.game__main {
+    width: 70%;
+    height: 95%;
+    background-color: #011627d6;
+    margin: 15px 0 0 15px;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    padding: 1%;
+}
+
+@media screen and (max-width: 1000px) {
+    .game {
+        display: none;
+    }
+}

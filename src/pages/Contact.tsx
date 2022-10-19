@@ -64,7 +64,7 @@ export default function Contact(props: { setMenu: any }) {
     };
 
     return (
-        <div>
+        <div className='contact_mobile-flex'>
             <section className='contact'>
                 <SideBar
                     nav={["contact"]}

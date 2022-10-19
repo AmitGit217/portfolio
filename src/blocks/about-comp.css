@@ -1,0 +1,15 @@
+.about-comp {
+    display: flex;
+}
+.about-comp__code {
+    font-family: "Fira code";
+    display: flex;
+    gap: 25%;
+    width: 100%;
+}
+.about-comp__code span {
+    background: none !important;
+    letter-spacing: 1px;
+    line-height: 35px;
+    color: #607b96 !important;
+}

@@ -100,6 +100,13 @@
 }
 
 @media screen and (min-width: 1000px) {
+    .home__container {
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: flex-end;
+        gap: 215px;
+        height: 92vh;
+    }
     .home {
         gap: 90px;
         align-items: flex-start;

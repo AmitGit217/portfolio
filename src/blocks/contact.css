@@ -88,10 +88,15 @@
 
     .contact__code {
         display: block;
+        max-width: 600px;
         margin-top: 60px;
         margin-left: 1%;
     }
-    .contact__code > span {
+    .contact__code span,
+    .contact__code code {
         background: none !important;
+        max-width: 600px !important;
+        overflow-wrap: break-word !important;
+        overflow: auto;
     }
 }

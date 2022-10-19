@@ -47,7 +47,8 @@ export default function Contact(props: { setMenu: any }) {
  const message = {
      name: "${text.name}",
      email: "${text.email}",
-     message: "${text.message}",
+     // Better break the line until I fix the overflow
+     message: "${text.message}", 
      date: "${text.date}"
      }
     

@@ -101,7 +101,7 @@
 
 @media screen and (min-width: 1000px) {
     .home {
-        gap: 100px;
+        gap: 90px;
         align-items: flex-start;
     }
     .home__blur-green {

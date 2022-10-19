@@ -10,7 +10,7 @@
 }
 .menu-comp__item {
     margin: 0;
-    padding: 10px 35px 0 25px;
+    padding: 15px 35px 0 25px;
     border-right: 1px solid #1e2d3d;
     cursor: pointer;
     transition: 0.1s;

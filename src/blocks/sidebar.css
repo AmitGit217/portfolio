@@ -1,0 +1,28 @@
+.sidebar {
+    border-right: 1px solid #1e2d3d;
+    max-width: 232px;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    height: 90vh;
+}
+
+.sidebar__nav {
+    font-family: "Fira Code";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 21px;
+    color: #ffffff;
+    margin: 0;
+    padding-left: 10px;
+    cursor: pointer;
+    border-top: 1px solid #1e2d3d;
+    border-bottom: 1px solid #1e2d3d;
+    padding: 3%;
+    transition: 0.3s;
+}
+
+.sidebar__nav:hover {
+    opacity: 0.6;
+}

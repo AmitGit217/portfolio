@@ -47,7 +47,6 @@ export default function Contact(props: { setMenu: any }) {
  const message = {
      name: "${text.name}",
      email: "${text.email}",
-     // Better break the line until I fix the overflow
      message: "${text.message}", 
      date: "${text.date}"
      }
@@ -56,6 +55,7 @@ export default function Contact(props: { setMenu: any }) {
      form.send(message);
  })
 `;
+    //TODO: fix the overflow
 
     const handleChange = (e: any) => {
         const { value, name } = e.target;

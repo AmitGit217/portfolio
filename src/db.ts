@@ -26,6 +26,13 @@ const cards = [
         stack: [node, nest, jest, postgres, docker, typescript],
         link: "https://github.com/AmitGit217/nest-api",
     },
+    {
+        about: "Web service for searching news articles from around the world",
+        mainImage:
+            "https://www.classy.org/wp-content/uploads/2021/05/Nonprofit-Social-Media-Engagement-Tactics.jpg",
+        stack: [js, mongo, node, express, react, jest, html, css],
+        link: "https://github.com/AmitGit217/news-explorer-full",
+    },
 ];
 
 export default cards;
